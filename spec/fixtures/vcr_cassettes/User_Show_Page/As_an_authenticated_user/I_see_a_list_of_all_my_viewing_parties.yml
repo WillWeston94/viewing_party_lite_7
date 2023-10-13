@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/100?api_key=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 13 Oct 2023 17:10:41 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=23589
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 502221c590c8994507bac9cb8903859b
+      X-Memc-Age:
+      - '21340'
+      X-Memc-Expires:
+      - '1884'
+      Etag:
+      - W/"c4939b34cf968968d50baebb6efbe112"
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 5dbfb405f169293d35ad8b9ac0babe30.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DFW57-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - uIILmISbpL3fuIZExvVcbzYKX8yU4aTtMjbs552lj8skxXEidKDjVA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/cXQH2u7wUIX1eoIdEj51kHXoWhX.jpg","belongs_to_collection":null,"budget":1350000,"genres":[{"id":35,"name":"Comedy"},{"id":80,"name":"Crime"}],"homepage":"http://www.universalstudiosentertainment.com/lock-stock-and-two-smoking-barrels/","id":100,"imdb_id":"tt0120735","original_language":"en","original_title":"Lock,
+        Stock and Two Smoking Barrels","overview":"A card shark and his unwillingly-enlisted
+        friends need to make a lot of cash quick after losing a sketchy poker match.
+        To do this they decide to pull a heist on a small-time gang who happen to
+        be operating out of the flat next door.","popularity":12.67,"poster_path":"/8kSerJrhrJWKLk1LViesGcnrUPE.jpg","production_companies":[{"id":491,"logo_path":"/5LvDUt3KmvRnXQ4NrdWJYHeuA8J.png","name":"Summit
+        Entertainment","origin_country":"US"},{"id":21920,"logo_path":null,"name":"The
+        Steve Tisch Company","origin_country":""},{"id":13419,"logo_path":null,"name":"SKA
+        Films","origin_country":"GB"},{"id":1382,"logo_path":"/sOg7LGESPH5vCTOIdbMhLuypoLL.png","name":"PolyGram
+        Filmed Entertainment","origin_country":"US"},{"id":20076,"logo_path":"/i9qXGJIP9fGN22PP5jXUVENbyHi.png","name":"HandMade
+        Films","origin_country":"GB"}],"production_countries":[{"iso_3166_1":"GB","name":"United
+        Kingdom"},{"iso_3166_1":"US","name":"United States of America"}],"release_date":"1998-08-28","revenue":28356188,"runtime":105,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"A
+        Disgrace to Criminals Everywhere.","title":"Lock, Stock and Two Smoking Barrels","video":false,"vote_average":8.126,"vote_count":6083}'
+  recorded_at: Fri, 13 Oct 2023 17:10:41 GMT
+recorded_with: VCR 6.2.0

@@ -9,13 +9,22 @@
     <ul>
     <% @viewing_parties.each_with_index do |party, index| %>
       <div class="party">
-        <%= image_tag @movie_details[index].image %> 
+        <%= image_tag @movie_details[index].poster_path %> 
         <h2><%= link_to @movie_details[index].title, movie_path(party.movie_id) %></h2>
         <p><%= @movie_details[index].description %></p>
-        <p><%= party.is_host ? 'Hosting' : 'Invited' %></p>
+        <p><%= party.is_host ? "Hosting" : "Invited by: #{party.user.name}" %></p>
         <p><%= party.date_time.strftime('%B %d, %Y %I:%M %p') %></p>
+
+        <% if party.is_host %>
+          <p> Invited Friends: </p>
+          <ul>
+            <% party.invited_friends.each do |friend| %>
+              <li><%= friend.name %></li>
+            <% end %>
+          </ul>
+        <% end %>
       </div>
     <% end %>
-        </ul>
+    </ul>
   <% end %>
 </div>
